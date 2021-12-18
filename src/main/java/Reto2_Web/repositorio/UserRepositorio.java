@@ -11,10 +11,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-/**
- *
- * @author USUARIO
- */
+
 @Repository
 public class UserRepositorio {
      @Autowired
@@ -50,11 +47,7 @@ public class UserRepositorio {
         return userCrudRepository.findByEmailAndPassword(email, password);
     }
 
-    /**
-     * This method returns a user by its monthBirthDay
-     * @param month
-     * @return
-     */
+
     public List<User> getByMonthBirthDay(String month){
         return userCrudRepository.findByMonthBirthtDay(month);
     }
