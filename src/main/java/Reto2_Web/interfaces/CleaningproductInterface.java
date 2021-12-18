@@ -10,6 +10,6 @@ import java.util.List;
 public interface CleaningproductInterface extends MongoRepository<Cleaningproductproduct, String> {
 
     public List<Cleaningproductproduct> findByPrice(double price);
-    public List<Cleaningproductproduct> findByPriceLessThanEqua(String description);
+    public List<Cleaningproductproduct> findByDescriptionContainingIgnoreCase(String description);
     
 }

@@ -41,7 +41,7 @@ public class CleaningproductRepository {
     }
 
     public List<Cleaningproductproduct> getByDescriptionContains(String description){
-        return crudInterface.findByPriceLessThanEqua(description);
+        return crudInterface.findByDescriptionContainingIgnoreCase(description);
     }
 
 }
